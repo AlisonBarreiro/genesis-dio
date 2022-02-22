@@ -1,0 +1,283 @@
+.wrapper {
+  width: 100px;
+  height: 100px;
+}
+.wrapper .slice {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-top: 210px solid #fefcc6;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  z-index: 10;
+}
+.wrapper .slice:before {
+  content: "";
+  position: absolute;
+  left: -90px;
+  top: -270px;
+  width: 180px;
+  height: 90px;
+  background: #fefcc6;
+  border-radius: 100%;
+  border-top: 30px solid #e57a19;
+  z-index: -1;
+}
+.wrapper .slice .tomato {
+  background: #a30000;
+  position: absolute;
+  border-radius: 100%;
+}
+.wrapper .slice .tomato:nth-child(1) {
+  width: 60px;
+  height: 60px;
+  top: -210px;
+  left: 6px;
+}
+.wrapper .slice .tomato:nth-child(2) {
+  width: 42px;
+  height: 42px;
+  top: -160px;
+  left: -42px;
+}
+.wrapper .slice .olive {
+  background: #a30000;
+  position: absolute;
+  border-radius: 100%;
+}
+.wrapper .slice .olive:nth-child(3) {
+  width: 24px;
+  height: 24px;
+  top: -84px;
+  left: -6px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.selected {
+  opacity: 0.3;
+}
+.slice:nth-child(1) {
+  -webkit-animation-name: slide-in-1;
+          animation-name: slide-in-1;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes slide-in-1 {
+  from {
+    transform: translateX(-50%) rotate(60deg) translateY(-180px);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(-50%) rotate(60deg) translateY(-90px);
+    visibility: visible;
+  }
+}
+
+@keyframes slide-in-1 {
+  from {
+    transform: translateX(-50%) rotate(60deg) translateY(-180px);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(-50%) rotate(60deg) translateY(-90px);
+    visibility: visible;
+  }
+}
+.slice:nth-child(2) {
+  -webkit-animation-name: slide-in-2;
+          animation-name: slide-in-2;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes slide-in-2 {
+  from {
+    transform: translateX(-50%) rotate(120deg) translateY(-180px);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(-50%) rotate(120deg) translateY(-90px);
+    visibility: visible;
+  }
+}
+
+@keyframes slide-in-2 {
+  from {
+    transform: translateX(-50%) rotate(120deg) translateY(-180px);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(-50%) rotate(120deg) translateY(-90px);
+    visibility: visible;
+  }
+}
+.slice:nth-child(3) {
+  -webkit-animation-name: slide-in-3;
+          animation-name: slide-in-3;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes slide-in-3 {
+  from {
+    transform: translateX(-50%) rotate(180deg) translateY(-180px);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(-50%) rotate(180deg) translateY(-90px);
+    visibility: visible;
+  }
+}
+
+@keyframes slide-in-3 {
+  from {
+    transform: translateX(-50%) rotate(180deg) translateY(-180px);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(-50%) rotate(180deg) translateY(-90px);
+    visibility: visible;
+  }
+}
+.slice:nth-child(4) {
+  -webkit-animation-name: slide-in-4;
+          animation-name: slide-in-4;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes slide-in-4 {
+  from {
+    transform: translateX(-50%) rotate(240deg) translateY(-180px);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(-50%) rotate(240deg) translateY(-90px);
+    visibility: visible;
+  }
+}
+
+@keyframes slide-in-4 {
+  from {
+    transform: translateX(-50%) rotate(240deg) translateY(-180px);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(-50%) rotate(240deg) translateY(-90px);
+    visibility: visible;
+  }
+}
+.slice:nth-child(5) {
+  -webkit-animation-name: slide-in-5;
+          animation-name: slide-in-5;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes slide-in-5 {
+  from {
+    transform: translateX(-50%) rotate(300deg) translateY(-180px);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(-50%) rotate(300deg) translateY(-90px);
+    visibility: visible;
+  }
+}
+
+@keyframes slide-in-5 {
+  from {
+    transform: translateX(-50%) rotate(300deg) translateY(-180px);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(-50%) rotate(300deg) translateY(-90px);
+    visibility: visible;
+  }
+}
+.slice:nth-child(6) {
+  -webkit-animation-name: slide-in-6;
+          animation-name: slide-in-6;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes slide-in-6 {
+  from {
+    transform: translateX(-50%) rotate(360deg) translateY(-180px);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg) translateY(-90px);
+    visibility: visible;
+  }
+}
+
+@keyframes slide-in-6 {
+  from {
+    transform: translateX(-50%) rotate(360deg) translateY(-180px);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg) translateY(-90px);
+    visibility: visible;
+  }
+}s
